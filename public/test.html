@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xml:lang="uk-UA" lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Придбати - Panoramo</title>
+    <meta name="Description" content="Перетворюємо будь-які обєкти на круті панорами.">
+    <meta property="og:url" content="https://www.panoramo.com.ua/">
+    <meta property="og:title" content="Придбати - Panoramo">
+    <meta property="og:description" content="Перетворюємо будь-які обєкти на круті панорами.">
+    <meta property="og:image" content="https://panoramo.com.ua/open_graph_logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Panoramo">
+    <meta property="og:locale" content="uk_UA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#282828">
+    <meta name="msapplication-navbutton-color" content="#282828">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#282828">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <nav class="globalnav">
+        <div class="flyout_nav">
+            <div class="nav_content_wrapper">
+                <a class="logo_link" href="index.html">
+                    <img class="logo_img" src="/img/logo.png">
+                    <p class="logo_text">Panoramo</p>                
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="body-flex">
+        <div class="contact_container">
+            <h1 class="contact_page_title">Давайте знайдемо <br class="mob"> індивідуальне <br class="desk"> рішення<br class="mob"> для вашого об'єкту.</h1>
+            <p class="contact_page_smalltitle">Заповнюйте та надсилайте форму.<br> Ми зателефонуємо вам,  щоб <br class="mob"> уточнити деталі.</p>
+            <div class="user-box_container">
+                <div class="contact_row_box">
+                    <div class="name_box">
+                        <div class="user-box margin one">
+                            <input id="nameInput" class="contact_input first-input" type="text" name="name" required>
+                            <label class="first-label">Ім'я</label>
+                        </div>
+                        <div class="contact_error_container one">
+                            <p class="error_msg">   
+                                <span class="material-symbols-outlined">error</span> 
+                                Будь ласка, введіть своє Ім'я.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="phone_box">
+                        <div class="user-box three">
+                            <input id="phoneInput" class="contact_input third-input" type="tel" name="phone" required>
+                            <label class="third-label">
+                                Номер Телефону
+                            </label>
+                        </div>
+                        <div class="contact_error_container three">
+                            <p class="error_msg">  
+                                <span class="material-symbols-outlined">error</span> 
+                                Будь ласка, введіть свій Номер Телефону.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <p class="contact_page_policy">
+                    Натискаючи Записатися, 
+                    ви приймаєте нашу <br> <a href="policy.html" target="_blank" ontouchstart="">Політику Конфіденційності</a> та <a href="terms.html" target="_blank" ontouchstart="">Умови Використання</a>.
+                </p> -->
+                <button id="submitBtn" class="contact_btn" ontouchstart="">Відправити</button> 
+            </div>
+        </div>
+        <div class="contact_container_filled">    
+            <div class="contact_container_wrapper"> 
+                <h1 class="contact_succ_title">
+                    Заявка успішно<br class="mob"> відправлена!
+                </h1>
+            </div>
+        </div>
+        <div class="contact_container_error">    
+            <h1 class="contact_succ_title">
+                Щось пішло не так. 
+            </h1>
+            <p class="contact_succ_content">
+                Будь ласка, спробуйте пізніше.
+            </p>
+        </div>
+    </main>
+
+    <footer id="faq">  
+        <!-- <h1 class="faq_title"> Запитання? Відповді. </h1>    
+        <div class="faq_item">
+            <div class="question" ontouchstart="">
+                <h2>Можна спробувати безкоштовно?</h2>
+                <div class="toggle-btn"></div>
+            </div>
+            <div class="answer">
+                <p>
+                    Так, пробний урок можна <br class="mob"> отримати безкоштовно.
+                </p>
+            </div>
+        </div>   
+        <div class="faq_item">
+            <div class="question" ontouchstart="">
+                <h2>Можна платити погодинно?</h2>
+                <div class="toggle-btn"></div>
+            </div>
+            <div class="answer">
+                <p>
+                    Так, але купувати пакет уроків вигідніше.
+                </p>
+            </div>
+        </div>
+        <div class="faq_item">
+            <div class="question" ontouchstart="">
+                <h2>Скільки триває урок?</h2>
+                <div class="toggle-btn"></div>
+            </div>
+            <div class="answer">
+                <p>
+                    Урок триває 60 хвилин. Такий<br class="mob">
+                    часовий інтервал дозволить тобі<br class="mob"> краще<br class="pad_desk"> 
+                    зосередитися на матеріалі,<br class="mob"> не відчуваючи перевантаження.
+                </p>
+            </div>
+        </div>
+        <div class="faq_item">
+            <div class="question" ontouchstart="">
+                <h2>В ne school є корпоративне навчання?</h2>
+                <div class="toggle-btn"></div>
+            </div>
+            <div class="answer">
+                <p>
+                    Так, ми проводимо корпоративне навчання для компаній. <br class="desk">
+                    Залишайте заявку і ми запросимо Вас на зустріч, щоб<br class="desk"> ознайомити з усіма деталями навчання.
+                </p>
+            </div>
+        </div>         -->
+        <div class="under_faq_container_auto" id="social">
+            <div class="social_media_container">
+                <a class="social" href="https://instagram.com/neschool.ua?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+                    <img class="instagram" src="/img/instagram.svg" alt="Instagram" ontouchstart="">
+                </a>
+                <!-- <a class="social" href="https://www.tiktok.com/@ne_school?_t=8ePz6t5urIx&_r=1" target="_blank">
+                    <img class="tiktok" src="/img/tiktok.svg" alt="TikTok" ontouchstart="">
+                </a> -->
+            </div>
+            <div class="policy_link"> 
+                <p class="number">Телефонуй нам на +380 (73) 717 71 64.</p>
+                <p class="street">Рівне, Костромська 49</p>
+                <p class="copyright">
+                    © 2024 Panoramo. Всі права захищені.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="blur-navbar-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
