@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 50.2px;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: InterTight-Medium, 'Inter Tight';
+        font-weight: 500;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #86868b;
+      }
+
+      .cls-2 {
+        font-size: 50.2px;
+      }
+
+      .cls-3 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-3" d="M223.4,158.5s10-12.7,43.3-14c0,0-11.3-8.4-38.9,3.7,0,0,6.7-8.5,24.2-11.9,17.5-3.3,25.8,6.3,25.8,6.3,0,0-15.3,29.6-54.4,15.8Z"/>
+  <path class="cls-3" d="M221.6,140.6c10.3-40.5,38.2-42.2,38.2-42.2,2.1,27.7-4.3,35.2-4.3,35.2-9.9-1.2-22.1,5.2-22.1,5.2,0,0,4-16.7,17.3-29.5,0,0-25,2.5-26.4,39.7,0,0-1.4,9.4-4.5,0-3.1-9.4-4.6-25.1-4.6-25.1l6.5,16.8Z"/>
+  <path class="cls-3" d="M226.1,120.2s-4.2-11.2-15.8-16.5c0,0-21,30,7.9,53.3,0,0-19-22.6-5.4-43.9,0,0,4.8.5,13.3,7.2Z"/>
+  <text class="cls-2" transform="translate(78.5 157.7)"><tspan x="0" y="0">Захід</tspan></text>
+  <text class="cls-1" transform="translate(22.1 201.6)"><tspan x="0" y="0">Агробізнес</tspan></text>
+</svg>
