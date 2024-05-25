@@ -124,54 +124,6 @@ if (insidePanel) {
 }
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  var submitBtn = document.getElementById("submitBtn");
-  if (submitBtn) {
-    submitBtn.addEventListener("click", function(event) {
-      event.preventDefault(); 
-      var name = document.getElementById("nameInput").value;
-      var phone = document.getElementById("phoneInput").value;
-      if (name.trim() === "" || phone.trim() === "") {
-        if (name.trim() === "") {
-          document.querySelector(".first-input").classList.add("error");
-          document.querySelector(".first-label").classList.add("error");
-          document.querySelector(".contact_error_container.one").style.display = "block";
-        } else {
-          document.querySelector(".first-input").classList.remove("error");
-          document.querySelector(".first-label").classList.remove("error");
-          document.querySelector(".contact_error_container.one").style.display = "none";
-        }
-        if (phone.trim() === "") {
-          document.querySelector(".third-input").classList.add("error");
-          document.querySelector(".third-label").classList.add("error");
-          document.querySelector(".contact_error_container.three").style.display = "block";
-        } else {
-          document.querySelector(".third-input").classList.remove("error");
-          document.querySelector(".third-label").classList.remove("error");
-          document.querySelector(".contact_error_container.three").style.display = "none";
-        }
-      } else {
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "submit_form.php", true);
-        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xhr.onreadystatechange = function() {
-          if (xhr.readyState == 4) {
-            if (xhr.status == 200) {
-              console.log("Дані успішно відправлено!");
-              document.querySelector(".contact_container").classList.add("filled");
-              document.querySelector(".contact_container_filled").classList.add("filled");
-            } else {
-              console.log("Щось пішло не так. Спробуйте пізніше.");
-              document.querySelector(".contact_container").classList.add("filled");
-              document.querySelector(".contact_container_error").classList.add("filled");
-            }
-          }
-        };
-        xhr.send("name=" + name + "&phone=" + phone);
-      }
-    });
-  }
-});
 
 
 // 
