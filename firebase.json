@@ -5,6 +5,52 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/gate",
+        "destination": "/gate.html"
+      },
+      {
+        "source": "/gate/garage",
+        "destination": "/garage.html"
+      },
+      {
+        "source": "/gate/sliding",
+        "destination": "/sliding.html"
+      },
+      {
+        "source": "/gate/swing",
+        "destination": "/swing.html"
+      },
+      {
+        "source": "/automatic",
+        "destination": "/automatic.html"
+      },
+      {
+        "source": "/shutter",
+        "destination": "/shutter.html"
+      },
+      {
+        "source": "/panorama",
+        "destination": "/panorama.html"
+      },
+      {
+        "source": "/barrier",
+        "destination": "/barrier.html"
+      },
+      {
+        "source": "/conversation",
+        "destination": "/conversation.html"
+      },
+      {
+        "source": "**",
+        "destination": "/404.html"
+      }
     ]
   }
 }
